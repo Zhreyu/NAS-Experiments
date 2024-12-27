@@ -1,0 +1,15 @@
+authorName: your_name
+experimentName: MNIST_NAS
+trialConcurrency: 1
+maxExecDuration: 1h
+maxTrialNum: 4
+useActiveGpu: True  
+trainingServicePlatform: local
+searchSpacePath: search_space.json
+useAnnotation: false
+tuner:
+  builtinTunerName: TPE
+trial:
+  command: python MNIST_NAS.py
+  codeDir: .
+  gpuNum: 0

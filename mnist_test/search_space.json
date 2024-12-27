@@ -1,0 +1,6 @@
+{
+    "hidden_size": {"_type": "choice", "_value": [64, 128, 256]},
+    "dropout_rate": {"_type": "uniform", "_value": [0.1, 0.5]},
+    "learning_rate": {"_type": "loguniform", "_value": [1e-5, 1e-3]},
+    "epochs": {"_type": "choice", "_value": [10, 20]}
+}
